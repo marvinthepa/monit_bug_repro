@@ -7,11 +7,11 @@ Run:
 In a separate terminal, run
 
 ```
-  /path/to/monit -c monitrc start all
+  /path/to/monit start all
 ```
 
 Observe:
-With monit 5.26.0, the output of `/path/to/monit -c monitrc` contains:
+With monit 5.26.0, the output of `/path/to/monit summary` contains:
 
 ```
 foo                             │ OK                         │ Process

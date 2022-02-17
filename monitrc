@@ -1,0 +1,12 @@
+set httpd port 2812 and
+use address localhost
+allow localhost
+
+set daemon 2
+set statefile "/tmp/monit_statefile"
+
+check process foo matching "foo.sh"
+  onreboot nostart
+  group foo
+  start program = "./foo.sh" with timeout 200 seconds
+  stop program = "/usr/bin/pkill foo.sh"

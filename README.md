@@ -1,3 +1,6 @@
+This is a minimal reproduction of https://bitbucket.org/tildeslash/monit/issues/1028/.
+The bug is now fixed, see there for details.
+
 Run:
 
 ```
